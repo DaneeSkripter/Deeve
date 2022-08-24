@@ -10,6 +10,7 @@ new Command({
 	run: (ctx) => {
 		const embed = new Discord.MessageEmbed
 		embed.setTitle(`🏓 My ping is ${ctx.client.ws.ping} ms`)
-		ctx.reply({ embeds: [embed]})
+		embed.setColor("WHITE")
+		ctx.reply({ embeds: [embed], ephemeral: true})
 	}
 });
