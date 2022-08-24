@@ -1,16 +1,18 @@
 const { Command, CommandType } = require('gcommands');
 const Discord = require('discord.js')
+const ms = require('ms')
+const package = require('../package.json')
 // Create a new command with the name 'hello'
 new Command({
-	name: 'ping',
-	description: 'Shows bot ping',
+	name: 'help',
+	description: 'Shows all commands',
 	// GCommands Next offers different types of commands, we will only use slash and message commands here.
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	// The function thats executed when the user uses the command.
 	run: (ctx) => {
 		const embed = new Discord.MessageEmbed
-		embed.setTitle(`🏓 My ping is ${ctx.client.ws.ping} ms`)
-		embed.setColor("WHITE")
-		ctx.reply({ embeds: [embed], ephemeral: true})
+        embed.setDescription(`**📜 Moderation**\n**/clear** - Clear messages\n\n**⚠ Other**\n**/ping** - Show bot ping\n**/about** - Show informations about bot`)
+        embed.setColor("WHITE")
+		ctx.reply({ embeds: [embed]})
 	}
 });
