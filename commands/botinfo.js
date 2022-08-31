@@ -18,7 +18,7 @@ new Command({
             { name: 'Version', value: 'v1.0.0-beta.1', inline: true},
             { name: 'Developer', value: 'DaneeSkripter', inline: true},
             )
-        embed.setColor("WHITE")
-		ctx.reply({ embeds: [embed], ephemeral: true})
+        embed.setColor("#189EDA")
+		ctx.reply({ embeds: [embed]})
 	}
 });
