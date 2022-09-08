@@ -27,7 +27,7 @@ new Command({
             ctx.reply({ embeds: [err_msg], ephemeral: true})
         })
         const msg = new Discord.MessageEmbed()
-        .setColor("GREEN")
+        .setColor("#189EDA")
         .setTitle(`I deleted ${amount} messages!`)
         ctx.reply({embeds: [msg], ephemeral: true})
 	}

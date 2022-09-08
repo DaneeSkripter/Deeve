@@ -11,8 +11,8 @@ new Command({
 	// The function thats executed when the user uses the command.
 	run: (ctx) => {
 		const embed = new Discord.MessageEmbed
-        embed.setDescription(`**📜 Moderation**\n**/clear** - Clear messages\n\n**⚠ Other**\n**/ping** - Show bot ping\n**/about** - Show informations about bot`)
-        embed.setColor("WHITE")
+        embed.setDescription(`**📜 Moderation**\n**/clear** - Clear messages\n**/ban** - Ban a user\n**/kick** - Kick a user\n\n**⚠ Other**\n**/ping** - Show bot ping\n**/about** - Show informations about bot`)
+        embed.setColor("#189EDA")
 		ctx.reply({ embeds: [embed]})
 	}
 });
