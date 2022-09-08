@@ -15,7 +15,7 @@ new Command({
             { name: 'Uptime', value: ms(ctx.client.uptime, { long: true}), inline: true},
             { name: 'Discord.js', value: package.dependencies['discord.js'], inline: true},
             { name: 'Node.js', value: package.nodejsver, inline: true},
-            { name: 'Version', value: 'v1.0.0-beta.1', inline: true},
+            { name: 'Version', value: 'v1.0.0-beta.2', inline: true},
             { name: 'Developer', value: 'DaneeSkripter', inline: true},
             )
         embed.setColor("#189EDA")
