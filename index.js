@@ -41,7 +41,7 @@ var list = true;
 // GIVEAWAYS
 const { GiveawaysManager } = require('discord-giveaways');
 const manager = new GiveawaysManager(client, {
-    storage: './saves/giveaways.json',
+    storage: './json/giveaways.json',
     default: {
         botsCanWin: false,
         embedColor: '#FF0000',
